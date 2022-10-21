@@ -1,0 +1,56 @@
+p::before {
+    content: " - Remember this";
+    background-color:darkolivegreen;
+}
+p::after {
+    content: " - Remember this";
+    background-color:cadetblue;
+}
+a:hover::before {
+    content: "Before -";
+    background-color:darkseagreen;
+}
+a:hover::after{
+    content: "-after";
+    background-color:lightsalmon;
+}
+q::after {
+    content: close-quote;
+   
+  }
+  
+  .noquotes::before {
+    content: no-open-quote;
+    
+  }
+  
+  .noquotes::after {
+    content: no-close-quote;
+  }
+  body {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: #f2f2f2;
+  }
+  
+  article {
+    margin: 2rem;
+    padding: 2rem;
+    background: white;
+  }
+  
+  .image::before {
+    content: url(//unsplash.it/2000/200);
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .gradient::before {
+    content: linear-gradient(#e66465, #9198e5);
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
